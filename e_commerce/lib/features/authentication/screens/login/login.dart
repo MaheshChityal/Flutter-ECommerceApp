@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_utils/get_utils.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:t_store/common/styles/spacing_styles.dart';
-import 'package:t_store/utils/constants/colors.dart';
-import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
-import 'package:t_store/utils/helpers/helper_functions.dart';
 
 import '../../../../common/widgets/login_signup/form_divider.dart';
 import '../../../../common/widgets/login_signup/social_button.dart';
@@ -18,7 +14,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
 
     return Scaffold(
       body: SingleChildScrollView(
