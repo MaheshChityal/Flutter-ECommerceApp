@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:t_store/utils/constants/image_strings.dart';
-import 'package:t_store/utils/constants/text_strings.dart';
+import 'package:e_commerce/utils/constants/image_strings.dart';
+import 'package:e_commerce/utils/constants/text_strings.dart';
 
 import '../../controllers/onboarding/onboarding_controller.dart';
 import 'widgets/onboarding_dotNavigation.dart';

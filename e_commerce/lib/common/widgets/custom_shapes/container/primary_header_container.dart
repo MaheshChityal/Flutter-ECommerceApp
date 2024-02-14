@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:t_store/common/widgets/custom_shapes/container/curcular_container.dart';
+import 'package:e_commerce/common/widgets/custom_shapes/container/curcular_container.dart';
 
 import '../../../../utils/constants/colors.dart';
 import '../curved_edges/curved_edges_widget.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:t_store/utils/constants/sizes.dart';
+import 'package:e_commerce/utils/constants/sizes.dart';
 
 import '../../../../common/widgets/custom_shapes/container/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/container/search_container.dart';
@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(
                     height: TSizes.spaceBtwSections,
                   ),
-                  
+
                   // Searchbar
                   TSearchContainer(
                     text: 'Search in Store',
