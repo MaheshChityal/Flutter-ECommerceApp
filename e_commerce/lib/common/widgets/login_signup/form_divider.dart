@@ -5,7 +5,7 @@ import '../../../utils/helpers/helper_functions.dart';
 
 
 class FormDivider extends StatelessWidget {
-   FormDivider({
+   const FormDivider({
     super.key,
     required this.dividerText
   });
