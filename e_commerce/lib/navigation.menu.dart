@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/shop/screens/store/store.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -22,7 +23,9 @@ class NavigationMenu extends StatelessWidget {
             onDestinationSelected: (index) =>
                 controller.selectedIndex.value = index,
             backgroundColor: darkMode ? TColors.black : TColors.white,
-            indicatorColor: darkMode ? TColors.white.withOpacity(0.1) : TColors.black.withOpacity(0.1),
+            indicatorColor: darkMode
+                ? TColors.white.withOpacity(0.1)
+                : TColors.black.withOpacity(0.1),
             destinations: const [
               NavigationDestination(
                 icon: Icon(Iconsax.home),
@@ -52,9 +55,7 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    Container(
-      color: Colors.purple,
-    ),
+    const StoreScreen(),
     Container(
       color: Colors.orange,
     ),
