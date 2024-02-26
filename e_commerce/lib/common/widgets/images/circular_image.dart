@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../../../utils/constants/colors.dart';
-import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
 class TCircularImage extends StatelessWidget {
   const TCircularImage({
     super.key,
-    this.fit,
+    this.fit ,
     required this.image,
     this.isNetwokImage = false,
     this.overlayColor,
@@ -32,7 +31,7 @@ class TCircularImage extends StatelessWidget {
     return Container(
       width: width,
       height: height,
-      padding: EdgeInsets.all(TSizes.sm),
+      padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         color: dark ? TColors.black : TColors.white,
         borderRadius: BorderRadius.circular(100),

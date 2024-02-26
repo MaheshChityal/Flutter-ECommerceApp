@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../utils/constants/sizes.dart';
 
 class TRoundedContainer extends StatelessWidget {
-  TRoundedContainer(
+  const TRoundedContainer(
       {super.key,
       this.width,
       this.height,

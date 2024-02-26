@@ -13,7 +13,7 @@ class TCategoryTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         children: [
           Padding(
@@ -21,14 +21,14 @@ class TCategoryTab extends StatelessWidget {
             child: Column(
               children: [
                 // Brands
-                TBrandShowcase(
+                const TBrandShowcase(
                   images: [
                     TImages.productImage3,
                     TImages.productImage2,
                     TImages.productImage1
                   ],
                 ),
-                TBrandShowcase(
+                const TBrandShowcase(
                   images: [
                     TImages.productImage3,
                     TImages.productImage2,
@@ -51,7 +51,7 @@ class TCategoryTab extends StatelessWidget {
 
                 TGridLayout(
                   itemCount: 4,
-                  itemBuilder: (_, index) => TProductCardVertical(),
+                  itemBuilder: (_, index) => const TProductCardVertical(),
                 ),
                 const SizedBox(height: TSizes.spaceBtwSections,),
               ],

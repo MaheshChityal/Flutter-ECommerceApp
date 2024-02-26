@@ -24,7 +24,7 @@ class TBrandCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: TRoundedContainer(
-        padding: EdgeInsets.all(TSizes.sm),
+        padding: const EdgeInsets.all(TSizes.sm),
         borderColor: TColors.grey,
         showBorder: showBorder,
         backgroundColor: Colors.transparent,
@@ -53,7 +53,7 @@ class TBrandCard extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  TBrandTitleWithVerifiedIcon(
+                  const TBrandTitleWithVerifiedIcon(
                     title: 'Nike',
                     brandTextSize: TextSizes.large,
                   ),
