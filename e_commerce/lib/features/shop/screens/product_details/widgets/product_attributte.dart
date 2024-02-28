@@ -6,6 +6,7 @@ import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../common/widgets/chips/choise_chip.dart';
 import '../../../../../utils/constants/sizes.dart';
 
 class TProductAttributes extends StatelessWidget {
@@ -92,17 +93,67 @@ class TProductAttributes extends StatelessWidget {
 
         //Attributes
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const TSectionHeading(title: 'Colors'),
+            const TSectionHeading(
+              title: 'Colors',
+              showActionButton: false,
+            ),
             const SizedBox(
               height: TSizes.spaceBtwItems / 2,
             ),
-            ChoiceChip(
-              label: const Text('Green'),
-              selected: true,
-              onSelected: (value) {},
-              labelStyle: const TextStyle(color: true ? TColors.white : null),
+            Wrap(
+              spacing: 8,
+              children: [
+                TChoiceChip(
+                  text: 'Green',
+                  selected: true,
+                  onSelected: (value) {},
+                ),
+                TChoiceChip(
+                  text: 'Blue',
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                TChoiceChip(
+                  text: 'Yellow',
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+              ],
+            )
+          ],
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const TSectionHeading(
+              title: 'Sizes',
+              showActionButton: false,
             ),
+            const SizedBox(
+              height: TSizes.spaceBtwItems / 2,
+            ),
+            Wrap(
+              spacing: 8,
+              children: [
+                TChoiceChip(
+                  text: 'UK 6',
+                  selected: true,
+                  onSelected: (value) {},
+                ),
+                TChoiceChip(
+                  text: 'UK 7',
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+                TChoiceChip(
+                  text: 'UK 8',
+                  selected: false,
+                  onSelected: (value) {},
+                ),
+              ],
+            )
           ],
         )
       ],
