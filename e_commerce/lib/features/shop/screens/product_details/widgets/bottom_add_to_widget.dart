@@ -8,7 +8,7 @@ import 'package:iconsax/iconsax.dart';
 class TBottomAddToCart extends StatelessWidget {
   const TBottomAddToCart({super.key});
 
-  @override
+  @override  
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Container(
