@@ -56,7 +56,7 @@ class TDeviceUtils {
   }
 
   static double getKeyboardHeight() {
-    final viewInsets = MediaQuery.of(Get.context!).viewInsets;
+    final viewInsets = View.of(Get.context!).viewInsets;
     return viewInsets.bottom;
   }
 

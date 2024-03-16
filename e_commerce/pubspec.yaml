@@ -10,9 +10,11 @@ environment:
 dependencies:
   capped_progress_indicator: ^0.0.2
   carousel_slider: ^4.2.1
+  cloud_firestore: ^4.15.8
   connectivity_plus: ^5.0.2
   cupertino_icons: ^1.0.2
-  firebase_core: ^2.27.0
+  firebase_core: ^2.27.1
+  # firebase_auth: ^4.17.9
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.3.1

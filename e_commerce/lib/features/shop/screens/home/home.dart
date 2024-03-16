@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             // Header
-            const PrimaryHeaderContainer(
+             PrimaryHeaderContainer(
               child: Column(
                 children: [
                   //Appbar

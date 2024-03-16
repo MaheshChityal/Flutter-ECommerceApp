@@ -82,7 +82,7 @@ class TProductCardVertical extends StatelessWidget {
               height: TSizes.spaceBtwSections / 2,
             ),
             //Details
-            const Padding(
+             Padding(
               padding: EdgeInsets.only(left: TSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
