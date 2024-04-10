@@ -3,7 +3,6 @@ import 'package:e_commerce/features/authentication/screens/onboarding/onboarding
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-// import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthenticationRepository extends GetxController {
   static AuthenticationRepository get instance => Get.find();
@@ -12,7 +11,7 @@ class AuthenticationRepository extends GetxController {
   final deviceStorage = GetStorage();
   // final _auth = FirebaseAuth.instance;
 
-  // Called from main.dart on app launch
+  //Called from main.dart on app launch
   @override
   void onReady() {
     FlutterNativeSplash.remove();
